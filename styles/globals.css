@@ -1,135 +1,205 @@
 @import url("https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap");
-
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  font-family: "Rammetto One", cursive;
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-family: "Rammetto One", cursive;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+    color: inherit;
+    text-decoration: none;
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
+
 .bgcolor {
-  background-image: linear-gradient(to right, #fc4d0f, #f9e101);
-  height: 100vh;
+    background-image: linear-gradient(to right, #fff, #fff);
+    height: 100vh;
 }
+
 .cardstyle {
-  background-color: #fff;
+    background-color: #fff;
+    border: none !important;
+    box-shadow: none !important;
 }
+
 .headingtext {
-  font-family: "Rammetto One", cursive;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 49px;
-  line-height: 60px !important;
-  text-align: center;
-  color: #ff4d00;
-  font-weight: 400px !important;
+    font-family: "Rammetto One", cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 49px;
+    line-height: 60px !important;
+    text-align: center;
+    color: #ff4d00;
+    font-weight: 400px !important;
 }
-img.quizstyle {
-  width: 100%;
-  height: 230px;
-  object-fit: cover;
-}
+
 .centerimg {
-  display: flex;
-  justify-content: center;
-  box-shadow: 0 4px 8px 0 rgb(214 204 204 / 20%),
-    0 6px 20px 0 rgb(161 143 143 / 19%);
-  padding: 52px;
-  width: 76%;
-  margin: 0 auto;
-  border-radius: 20px;
-}
-.centerimg.redbox {
-  display: flex;
-  justify-content: center;
-  box-shadow: 0 4px 8px 0 rgb(214 204 204 / 20%),
-    0 6px 20px 0 rgb(161 143 143 / 19%);
-  padding: 52px;
-  width: 76%;
-  margin: 0 auto;
-  border-radius: 20px;
-  background-color: red;
-  position: relative;
-}
-.centerimg.greenbox {
-  display: flex;
-  justify-content: center;
-  box-shadow: 0 4px 8px 0 rgb(214 204 204 / 20%),
-    0 6px 20px 0 rgb(161 143 143 / 19%);
-  padding: 52px;
-  width: 76%;
-  margin: 0 auto;
-  border-radius: 20px;
-  background-color: green;
-  position: relative;
-}
-.imgauto {
-  width: 78%;
-  margin: 0 auto;
-  margin-top: 34px;
-}
-img.checkright.css-0 {
-  position: absolute;
-  top: 48px;
-  width: 70%;
-}
-.btnstyle {
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 25px;
-}
-.card_center {
-  display: flex;
-  justify-content: center;
-  min-height: 100vh;
-  align-items: center;
-}
-.verticalcenter {
-  display: flex;
-  justify-content: center;
-  min-height: 100 vh;
-  align-items: center;
-  text-align: center;
-}
-.textleft {
-  font-style: normal;
-  font-weight: normal;
-  line-height: 60px !important;
-  text-align: left;
-  color: #ff4d00;
-  margin-left: 40px;
-}
-@media screen and (max-width: 1000px) and (min-width: 200px) {
-  h2.chakra-heading.headingtext.css-1dklj6k {
-    font-size: 19px;
-  }
-  .centerimg.redbox {
     display: flex;
-    padding: 27px;
-    width: 100%;
-  }
-  .centerimg.greenbox {
-    padding: 27px;
-    width: 100%;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgb(214 204 204 / 20%), 0 6px 20px 0 rgb(161 143 143 / 19%);
+    padding: 52px;
+    width: 76%;
     margin: 0 auto;
-  }
-  img.quizstyle {
-    width: 100%;
-    height: 135px;
-    -o-object-fit: cover;
-    object-fit: cover;
-  }
-  img.checkright.css-0 {
+    border-radius: 20px;
+}
+
+.centerimg.redbox {
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgb(214 204 204 / 20%), 0 6px 20px 0 rgb(161 143 143 / 19%);
+    padding: 5px;
+    position: relative;
+    height: auto;
+}
+
+.centerimg.greenbox {
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgb(214 204 204 / 20%), 0 6px 20px 0 rgb(161 143 143 / 19%);
+    padding: 5px;
+    width: 76%;
+    margin: 0 auto;
+    border-radius: 20px;
+    position: relative;
+    height: auto;
+}
+
+.centerimg:hover {
+    cursor: pointer;
+}
+
+.imgauto {
+    width: 78%;
+    margin: 0 auto;
+    margin-top: 34px;
+}
+
+img.checkright.css-0 {
     position: absolute;
-  }
+    width: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.checkcenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnstyle {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.button.chakra-button.btncolor.css-8pcd7y {
+    background-color: #55ADED;
+}
+
+.card_center {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.verticalcenter {
+    display: flex;
+    justify-content: center;
+    min-height: 50vh;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.textleft {
+    font-style: normal;
+    font-weight: normal;
+    line-height: 60px !important;
+    text-align: left;
+    color: #ff4d00;
+    margin-left: 40px;
+}
+
+h2.chakra-heading.textsize.css-1dklj6k {
+    font-style: normal;
+    font-weight: normal;
+    line-height: 47px !important;
+    color: #ff4d00;
+    margin-left: 40 px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.scoreBoardText{
+    color: #ff4d00;
+
+}
+
+.quizMeBtn{
+    margin-top: 1rem;
+    background-color: #ff4d00 !important;
+    color: white !important;
+}
+
+.scoreCard{
+    box-shadow: 0 4px 8px 0 rgb(214 204 204 / 20%), 0 6px 20px 0 rgb(161 143 143 / 19%);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+@media screen and (max-width: 1000px) and (min-width: 200px) {
+    h2.chakra-heading.headingtext.css-1dklj6k {
+        font-size: 19px;
+        line-height: 30px !important;
+    }
+    .centerimg.redbox {
+        display: flex;
+        width: 100%;
+    }
+    .centerimg.greenbox {
+        width: 100%;
+        margin: 0 auto;
+    }
+    img.quizstyle {
+        width: 100%;
+        height: 135px;
+        -o-object-fit: cover;
+        object-fit: cover;
+    }
+    img.checkright.css-0 {
+        position: absolute;
+    }
+    h2.chakra-heading.textsize.css-1dklj6k {
+        font-style: normal;
+        font-weight: normal;
+        line-height: 17px !important;
+        color: #ff4d00;
+        font-size: 11px;
+        text-align: center;
+    }
+    .textleft {
+        font-style: normal;
+        font-weight: normal;
+        line-height: 33px !important;
+        text-align: left;
+        color: #ff4d00;
+        margin-left: 33px;
+        font-size: 18px !important;
+    }
+    .verticalcenter {
+        display: flex;
+        justify-content: center;
+        min-height: 21vh;
+        align-items: center;
+        text-align: center;
+        margin-top: 27px;
+    }
 }
