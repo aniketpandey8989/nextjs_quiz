@@ -35,7 +35,7 @@ a {
   font-weight: 400px !important;
 }
 img.quizstyle {
-  width: 300px;
+  width: 100%;
   height: 230px;
   object-fit: cover;
 }
@@ -58,7 +58,8 @@ img.quizstyle {
   width: 76%;
   margin: 0 auto;
   border-radius: 20px;
-  border: 2px solid red;
+  background-color: red;
+  position: relative;
 }
 .centerimg.greenbox {
   display: flex;
@@ -69,12 +70,18 @@ img.quizstyle {
   width: 76%;
   margin: 0 auto;
   border-radius: 20px;
-  border: 2px solid rgb(89, 228, 8);
+  background-color: green;
+  position: relative;
 }
 .imgauto {
   width: 78%;
   margin: 0 auto;
   margin-top: 34px;
+}
+img.checkright.css-0 {
+  position: absolute;
+  top: 48px;
+  width: 70%;
 }
 .btnstyle {
   display: flex;
@@ -86,4 +93,43 @@ img.quizstyle {
   justify-content: center;
   min-height: 100vh;
   align-items: center;
+}
+.verticalcenter {
+  display: flex;
+  justify-content: center;
+  min-height: 100 vh;
+  align-items: center;
+  text-align: center;
+}
+.textleft {
+  font-style: normal;
+  font-weight: normal;
+  line-height: 60px !important;
+  text-align: left;
+  color: #ff4d00;
+  margin-left: 40px;
+}
+@media screen and (max-width: 1000px) and (min-width: 200px) {
+  h2.chakra-heading.headingtext.css-1dklj6k {
+    font-size: 19px;
+  }
+  .centerimg.redbox {
+    display: flex;
+    padding: 27px;
+    width: 100%;
+  }
+  .centerimg.greenbox {
+    padding: 27px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  img.quizstyle {
+    width: 100%;
+    height: 135px;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+  img.checkright.css-0 {
+    position: absolute;
+  }
 }
