@@ -7,26 +7,22 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-family: "Rammetto One", cursive;
 }
-
 a {
   color: inherit;
   text-decoration: none;
 }
-
 * {
   box-sizing: border-box;
 }
-
-.bgcolor {
+.bg-color {
   background-image: url(https://i.postimg.cc/N0XJYmCG/Group-501.png);
   height: 100vh;
 }
-
-.chakra-container.cardstyle.css-kc6gw4 {
+.chakra-container.card-style.css-kc6gw4 {
   border: none !important;
   box-shadow: none !important;
 }
-.headingtext {
+.heading-text {
   font-family: "Rammetto One", cursive;
   font-style: normal;
   font-weight: normal;
@@ -38,19 +34,7 @@ a {
   max-width: 50rem;
   margin: 0 auto;
 }
-
-.centerimg.redbox {
-  display: flex;
-  justify-content: center;
-  box-shadow: 0 4px 8px 0 rgb(214 204 204 / 20%),
-    0 6px 20px 0 rgb(161 143 143 / 19%);
-  padding: 5px;
-  position: relative;
-  height: auto;
-  border-radius: 20px;
-  width: 100%;
-}
-.centerimg.greenbox {
+.center-img {
   display: flex;
   justify-content: center;
   box-shadow: 0 4px 8px 0 rgb(214 204 204 / 20%),
@@ -62,18 +46,7 @@ a {
   height: auto;
   width: 100%;
 }
-.centerimg.redbox:hover {
-  display: flex;
-  justify-content: center;
-  box-shadow: 0 4px 8px 0 rgb(16 15 15 / 20%), 0 6px 20px 0 rgb(0 0 0 / 40%);
-  padding: 5px;
-  position: relative;
-  height: auto;
-  border-radius: 20px;
-  width: 100%;
-}
-
-.centerimg.greenbox:hover {
+.center-img:hover {
   display: flex;
   justify-content: center;
   box-shadow: 0 4px 8px 0 rgb(16 15 15 / 20%), 0 6px 20px 0 rgb(0 0 0 / 40%);
@@ -83,66 +56,39 @@ a {
   position: relative;
   height: auto;
   width: 100%;
-}
-.centerimg:hover {
   cursor: pointer;
 }
-
-.boxborder {
-  border: 1px solid #918d8d;
-  padding: 10px;
-  border-radius: 10px;
-  margin: 10px 0px;
-}
-.scorestyle {
+.score-style {
   font-size: 25px;
 }
-.outofscore {
+.out-of-score {
   color: #ff4d00;
   display: flex;
   justify-content: flex-end;
 }
-.imgauto {
-  width: 78%;
-  margin: 0 auto;
-  margin-top: 34px;
-}
-
-img.checkright.css-0 {
+img.check-right.css-0 {
   position: absolute;
   width: 35%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
-.checkcenter {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.btnstyle {
+.btn-style {
   display: flex;
   justify-content: center;
   margin-top: 25px;
 }
-
-.button.chakra-button.btncolor.css-8pcd7y {
+button.chakra-button.btn-color.css-8pcd7y {
+  font-family: Poppins;
   background-color: #55aded;
 }
-button.chakra-button.btncolor.css-8pcd7y {
-  font-family: Poppins;
-}
-
-.card_center {
+.card-center {
   display: flex;
   justify-content: center;
   min-height: 100vh;
   align-items: center;
 }
-
-.verticalcenter {
+.vertical-center {
   display: flex;
   justify-content: center;
   min-height: 50vh;
@@ -150,76 +96,62 @@ button.chakra-button.btncolor.css-8pcd7y {
   text-align: center;
   margin-top: 30px;
 }
-
-.textleft {
+.your-score {
   font-style: normal;
   font-weight: normal;
   line-height: 60px !important;
   text-align: left;
   color: #ff4d00;
 }
-
-h2.chakra-heading.textsize.css-1dklj6k {
+h2.chakra-heading.text-size.css-1dklj6k {
   font-style: normal;
   font-weight: normal;
   line-height: 47px !important;
   color: #ff4d00;
-  margin-left: 40 px;
   font-size: 25px;
   text-align: center;
 }
-
-.scoreBoardText {
+.score-board-text {
   color: #ff4d00;
 }
-
-.quizMeBtn {
+.quiz-me-btn {
   margin-top: 1rem;
   background-color: #ff4d00 !important;
   color: white !important;
 }
-
-.scoreCard {
-  box-shadow: 0 4px 8px 0 rgb(214 204 204 / 20%),
-    0 6px 20px 0 rgb(161 143 143 / 19%);
+.score-card {
+  box-shadow: 0 4px 8px 0 rgb(214 204 204 / 20%), 0 6px 20px 0 rgb(161 143 143 / 19%);
   padding: 1rem;
   border-radius: 1rem;
   background-color: #fff;
 }
-.scoreCard:hover {
+.score-card:hover {
   box-shadow: 0 4px 8px 0 rgb(16 15 15 / 20%), 0 6px 20px 0 rgb(0 0 0 / 40%);
   padding: 1rem;
   border-radius: 1rem;
   background-color: #fff;
 }
-.scoretext {
+.score-text {
   font-weight: 600 !important;
   font-size: 15px;
   font-family: Poppins;
 }
-
 @media screen and (max-width: 760px) and (min-width: 200px) {
-  h2.chakra-heading.headingtext.css-1dklj6k {
+  h2.chakra-heading.heading-text.css-1dklj6k {
     font-size: 19px !important;
     line-height: 30px !important;
   }
-  .centerimg.redbox {
-    display: flex;
-    width: 100%;
-  }
-  .centerimg.greenbox {
+  .center-img {
     width: 100%;
     margin: 0 auto;
-  }
-  .centerimg.redbox:hover {
     display: flex;
-    width: 100%;
   }
-  .centerimg.greenbox:hover {
+  .center-img:hover {
     width: 100%;
     margin: 0 auto;
+    display: flex;
   }
-  .card_center {
+  .card-center {
     display: flex;
     min-height: 70vh;
   }
@@ -228,47 +160,43 @@ h2.chakra-heading.textsize.css-1dklj6k {
     grid-row-gap: 20px;
     grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
   }
-  .verticalcenter {
+  .vertical-center {
     display: flex;
     justify-content: center;
     min-height: 22vh !important;
   }
-  .scorestyle {
+  .score-style {
     font-size: 17px;
   }
-  .chakra-container.cardstyle.css-kc6gw4 {
+  .chakra-container.card-style.css-kc6gw4 {
     max-width: 55rem;
   }
-  .verticalcenter {
+  .vertical-center {
     min-height: 35vh;
   }
-
 }
 @media screen and (max-width: 1024px) and (min-width: 761px) {
-  h2.chakra-heading.headingtext.css-1dklj6k {
+  h2.chakra-heading.heading-text.css-1dklj6k {
     font-size: 37px !important;
     line-height: 61px !important;
   }
-  .chakra-container.cardstyle.containersize.css-kc6gw4 {
+  .chakra-container.card-style.container-size.css-kc6gw4 {
     max-width: 46rem !important;
   }
-  /* .chakra-container.cardstyle.css-kc6gw4 {
-    max-width: 46rem;
-} */
-  .card_center {
+  .card-center {
     display: flex;
     min-height: 100vh;
   }
-  .scorestyle {
+  .score-style {
     font-size: 24px;
   }
-  .textleft {
+  .your-score {
     font-size: 30px !important;
   }
-  .verticalcenter {
+  .vertical-center {
     min-height:39vh;
   }
-  h2.chakra-heading.textsize.css-1dklj6k {
+  h2.chakra-heading.text-size.css-1dklj6k {
     font-size: 20px;
 }
 }
