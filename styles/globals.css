@@ -198,7 +198,7 @@ h2.chakra-heading.textsize.css-1dklj6k {
   font-family: Poppins;
 }
 
-@media screen and (max-width: 975px) and (min-width: 200px) {
+@media screen and (max-width: 760px) and (min-width: 200px) {
   h2.chakra-heading.headingtext.css-1dklj6k {
     font-size: 19px !important;
     line-height: 30px !important;
@@ -232,15 +232,17 @@ h2.chakra-heading.textsize.css-1dklj6k {
     display: flex;
     justify-content: center;
     min-height: 22vh !important;
-   
   }
   .scorestyle {
     font-size: 17px;
+  }
 }
-}
-@media screen and (max-width: 1024px) and (min-width: 976px) {
+@media screen and (max-width: 1024px) and (min-width: 761px) {
   h2.chakra-heading.headingtext.css-1dklj6k {
     font-size: 37px !important;
     line-height: 61px !important;
+  }
+  .chakra-container.cardstyle.css-kc6gw4 {
+    max-width: 50rem;
   }
 }
