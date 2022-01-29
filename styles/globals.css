@@ -48,7 +48,7 @@ a {
   position: relative;
   height: auto;
   border-radius: 20px;
-  width: 80%;
+  width: 100%;
 }
 .centerimg.greenbox {
   display: flex;
@@ -60,7 +60,7 @@ a {
   border-radius: 20px;
   position: relative;
   height: auto;
-  width: 80%;
+  width: 100%;
 }
 .centerimg.redbox:hover {
   display: flex;
@@ -70,7 +70,7 @@ a {
   position: relative;
   height: auto;
   border-radius: 20px;
-  width: 80%;
+  width: 100%;
 }
 
 .centerimg.greenbox:hover {
@@ -82,7 +82,7 @@ a {
   border-radius: 20px;
   position: relative;
   height: auto;
-  width: 80%;
+  width: 100%;
 }
 .centerimg:hover {
   cursor: pointer;
