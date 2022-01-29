@@ -56,7 +56,7 @@ const SingleQuiz = () => {
                 borderRadius="lg"
                 p={6}
                 boxShadow="xl"
-                className="cardstyle"
+                className="cardstyle containersize"
               >
                 <div>
                   <Heading className="headingtext">
@@ -118,7 +118,13 @@ const SingleQuiz = () => {
                 </div>
               </Container>
             ) : (
-            <Container>
+            <Container 
+            maxW="5xl"
+            borderWidth="1px"
+            borderRadius="lg"
+            p={6}
+            boxShadow="xl"
+            className="cardstyle">
                 <div>
                 <SimpleGrid columns={2} spacingX="40px" spacingY="20px">
                   <Box>

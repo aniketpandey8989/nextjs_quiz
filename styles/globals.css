@@ -236,17 +236,36 @@ h2.chakra-heading.textsize.css-1dklj6k {
   .scorestyle {
     font-size: 17px;
   }
+  .chakra-container.cardstyle.css-kc6gw4 {
+    max-width: 55rem;
+  }
+  .verticalcenter {
+    min-height: 35vh;
+  }
+
 }
 @media screen and (max-width: 1024px) and (min-width: 761px) {
   h2.chakra-heading.headingtext.css-1dklj6k {
     font-size: 37px !important;
     line-height: 61px !important;
   }
-  .chakra-container.cardstyle.css-kc6gw4 {
+  .chakra-container.cardstyle.containersize.css-kc6gw4 {
     max-width: 40rem !important;
   }
   .card_center {
     display: flex;
-    min-height: 60vh;
+    min-height: 100vh;
   }
+  .scorestyle {
+    font-size: 20px;
+  }
+  .textleft {
+    font-size: 30px !important;
+  }
+  .verticalcenter {
+    min-height:39vh;
+  }
+  h2.chakra-heading.textsize.css-1dklj6k {
+    font-size: 20px;
+}
 }
