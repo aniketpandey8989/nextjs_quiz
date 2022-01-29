@@ -49,15 +49,15 @@ const SingleQuiz = () => {
       {
         <div className="bgcolor">
           <div className="card_center">
-            <Container
-              maxW="5xl"
-              borderWidth="1px"
-              borderRadius="lg"
-              p={6}
-              boxShadow="xl"
-              className="cardstyle"
-            >
-              {questionNumber <= questions.length - 1 ? (
+            {questionNumber <= questions.length - 1 ? (
+              <Container
+                maxW="5xl"
+                borderWidth="1px"
+                borderRadius="lg"
+                p={6}
+                boxShadow="xl"
+                className="cardstyle"
+              >
                 <div>
                   <Heading className="headingtext">
                     {`${questionNumber + 1}/15 ${quiz.question}`}
@@ -116,85 +116,87 @@ const SingleQuiz = () => {
                     >{`Score: ${score}/15`}</Heading>
                   </SimpleGrid>
                 </div>
-              ) : (
+              </Container>
+            ) : (
+            <Container>
                 <div>
-                  <SimpleGrid columns={2} spacingX="40px" spacingY="20px">
-                    <Box>
-                      {" "}
-                      <div className="verticalcenter">
-                        <Heading as="h2" className="textleft">
-                          Your score: {score}/{questions.length} IMPRESSIVE!
-                        </Heading>
-                      </div>
-                    </Box>
-                    <Box>
-                      <div className="">
-                        <Heading as="h2" className="textsize">
-                          Share your 💩 performance on Twitter!{" "}
-                        </Heading>
-                      </div>
-                      <Box maxWidth={"25rem"} margin={"0 auto"}>
-                        <Box className="scoreCard">
-                          {" "}
-                          <Image
-                            src="https://i.postimg.cc/jdFLNFt5/image-3-2-3.png"
-                            alt="quizimg"
-                            className="crrdtopimg"
-                          />
-                          <div className="scoretext">
-                            I only recognized {score} out of my own{" "}
-                            {questions.length} sh*tposts. Damn.
-                          </div>
-                          <div className="boxborder">
-                            <Box display={"flex"} alignItems={"center"}>
-                              <div className="scoreBoardText">
-                                <div className="scorestyle">
-                                  Score: {score}/{questions.length}
-                                </div>
-                                <div>
-                                  Take the Elon Sh*tposts 💩 quiz and beat me!
-                                </div>
-                                <Box display={"flex"} justifyContent={"center"}>
-                                  <Button
-                                    onClick={resetState}
-                                    className="btncolor quizMeBtn"
-                                  >
-                                    Quiz Me
-                                  </Button>
-                                </Box>
+                <SimpleGrid columns={2} spacingX="40px" spacingY="20px">
+                  <Box>
+                    {" "}
+                    <div className="verticalcenter">
+                      <Heading as="h2" className="textleft">
+                        Your score: {score}/{questions.length} IMPRESSIVE!
+                      </Heading>
+                    </div>
+                  </Box>
+                  <Box>
+                    <div className="">
+                      <Heading as="h2" className="textsize">
+                        Share your 💩 performance on Twitter!{" "}
+                      </Heading>
+                    </div>
+                    <Box maxWidth={"25rem"} margin={"0 auto"}>
+                      <Box className="scoreCard">
+                        {" "}
+                        <Image
+                          src="https://i.postimg.cc/jdFLNFt5/image-3-2-3.png"
+                          alt="quizimg"
+                          className="crrdtopimg"
+                        />
+                        <div className="scoretext">
+                          I only recognized {score} out of my own{" "}
+                          {questions.length} sh*tposts. Damn.
+                        </div>
+                        <div className="boxborder">
+                          <Box display={"flex"} alignItems={"center"}>
+                            <div className="scoreBoardText">
+                              <div className="scorestyle">
+                                Score: {score}/{questions.length}
                               </div>
+                              <div>
+                                Take the Elon Sh*tposts 💩 quiz and beat me!
+                              </div>
+                              <Box display={"flex"} justifyContent={"center"}>
+                                <Button
+                                  onClick={resetState}
+                                  className="btncolor quizMeBtn"
+                                >
+                                  Quiz Me
+                                </Button>
+                              </Box>
+                            </div>
 
-                              <Image
-                                src="https://i.postimg.cc/zXpHN5vV/Group-519.png"
-                                alt="quizimg"
-                                className="quizstyle"
-                                maxWidth={"8rem"}
-                              />
-                            </Box>
-                          </div>
-                          <Image
-                            src="https://i.postimg.cc/Y0VM4TYB/image-3-2-1-1.png"
-                            alt="quizimg"
-                            className="quizstyle"
-                          />
-                        </Box>
+                            <Image
+                              src="https://i.postimg.cc/zXpHN5vV/Group-519.png"
+                              alt="quizimg"
+                              className="quizstyle"
+                              maxWidth={"8rem"}
+                            />
+                          </Box>
+                        </div>
+                        <Image
+                          src="https://i.postimg.cc/Y0VM4TYB/image-3-2-1-1.png"
+                          alt="quizimg"
+                          className="quizstyle"
+                        />
                       </Box>
-                      <Box
-                        display={"flex"}
-                        justifyContent={"center"}
-                        className="btnstyle"
-                      >
+                    </Box>
+                    <Box
+                      display={"flex"}
+                      justifyContent={"center"}
+                      className="btnstyle"
+                    >
                       <Link href="https://twitter.com/">
                         <Button colorScheme="blue" className="btncolor">
                           Tweet My Score
                         </Button>
                       </Link>
-                      </Box>
                     </Box>
-                  </SimpleGrid>
-                </div>
-              )}
+                  </Box>
+                </SimpleGrid>
+              </div>
             </Container>
+            )}
           </div>
         </div>
       }
