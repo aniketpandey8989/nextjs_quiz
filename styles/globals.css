@@ -47,6 +47,8 @@ a {
   padding: 5px;
   position: relative;
   height: auto;
+  border-radius: 20px;
+  width: 80%;
 }
 .centerimg.greenbox {
   display: flex;
@@ -58,16 +60,17 @@ a {
   border-radius: 20px;
   position: relative;
   height: auto;
+  width: 80%;
 }
 .centerimg.redbox:hover {
   display: flex;
   justify-content: center;
   box-shadow: 0 4px 8px 0 rgb(16 15 15 / 20%), 0 6px 20px 0 rgb(0 0 0 / 40%);
   padding: 5px;
-  margin: 0 auto;
-  border-radius: 20px;
   position: relative;
   height: auto;
+  border-radius: 20px;
+  width: 80%;
 }
 
 .centerimg.greenbox:hover {
@@ -79,6 +82,7 @@ a {
   border-radius: 20px;
   position: relative;
   height: auto;
+  width: 80%;
 }
 .centerimg:hover {
   cursor: pointer;
@@ -194,7 +198,7 @@ h2.chakra-heading.textsize.css-1dklj6k {
   font-family: Poppins;
 }
 
-@media screen and (max-width: 1024px) and (min-width: 200px) {
+@media screen and (max-width: 975px) and (min-width: 200px) {
   h2.chakra-heading.headingtext.css-1dklj6k {
     font-size: 19px !important;
     line-height: 30px !important;
@@ -207,8 +211,36 @@ h2.chakra-heading.textsize.css-1dklj6k {
     width: 100%;
     margin: 0 auto;
   }
+  .centerimg.redbox:hover {
+    display: flex;
+    width: 100%;
+  }
+  .centerimg.greenbox:hover {
+    width: 100%;
+    margin: 0 auto;
+  }
   .card_center {
     display: flex;
     min-height: 70vh;
+  }
+  .css-luuvyl {
+    display: grid;
+    grid-row-gap: 20px;
+    grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+  }
+  .verticalcenter {
+    display: flex;
+    justify-content: center;
+    min-height: 22vh !important;
+   
+  }
+  .scorestyle {
+    font-size: 17px;
+}
+}
+@media screen and (max-width: 1024px) and (min-width: 976px) {
+  h2.chakra-heading.headingtext.css-1dklj6k {
+    font-size: 37px !important;
+    line-height: 61px !important;
   }
 }
