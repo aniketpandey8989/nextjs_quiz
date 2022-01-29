@@ -7,7 +7,9 @@ import {
   SimpleGrid,
 } from "@chakra-ui/react";
 import React, { useState } from "react";
-import { questions } from "./quiz.json";
+import Link from "next/link";
+import quizData from "./quiz.json";
+const { questions } = quizData;
 
 const SingleQuiz = () => {
   const [questionNumber, setQuestionNumber] = useState(0);
@@ -174,7 +176,6 @@ const SingleQuiz = () => {
                             src="https://i.postimg.cc/Y0VM4TYB/image-3-2-1-1.png"
                             alt="quizimg"
                             className="quizstyle"
-                            // maxWidth={"8rem"}
                           />
                         </Box>
                       </Box>
@@ -183,9 +184,11 @@ const SingleQuiz = () => {
                         justifyContent={"center"}
                         className="btnstyle"
                       >
+                      <Link href="https://twitter.com/">
                         <Button colorScheme="blue" className="btncolor">
                           Tweet My Score
                         </Button>
+                      </Link>
                       </Box>
                     </Box>
                   </SimpleGrid>
