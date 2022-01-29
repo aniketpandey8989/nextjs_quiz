@@ -243,6 +243,10 @@ h2.chakra-heading.textsize.css-1dklj6k {
     line-height: 61px !important;
   }
   .chakra-container.cardstyle.css-kc6gw4 {
-    max-width: 50rem;
+    max-width: 40rem !important;
+  }
+  .card_center {
+    display: flex;
+    min-height: 60vh;
   }
 }
